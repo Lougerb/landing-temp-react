@@ -72,7 +72,7 @@ const Homepage = () => {
               nemo, sint, voluptatibus maxime obcaecati numquam? Quo repellat
               quaerat nihil ipsum aliquid nam sed aspernatur doloremque libero
               hic, necessitatibus consequuntur nulla adipisci delectus. Velit
-              nihil incidunt enim ipsum modi quo esse.xd
+              nihil incidunt enim ipsum modi quo esse.
             </p>
           </div>
         </div>
