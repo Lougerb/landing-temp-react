@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  // font-family: $font-primary-alt;
+  font-family: $font-primary;
+  font-size: 10px;
+  color: #707070;
+
+  @include mq_sp {
+    font-size: 2.667vw;
+  }
+}
+body {
+  min-width: 1366px;
+  font-family: $font-primary;
+  font-size: 1.6rem;
+
+  @include mq_sp {
+    min-width: 0;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #707070;
+  text-decoration: none;
+}
+
+
+/**
+ * Heading
+ */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     margin: 0;
+ }
+ 
+ /**
+  * Paragraph
+  */
+ p {
+     margin: 0;
+ }
+ 
+ /**
+  * List
+  */
+ ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }

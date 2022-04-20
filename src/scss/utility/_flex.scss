@@ -1,0 +1,25 @@
+.u-flex {
+    &__center {
+        &-mid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-space-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-space-evenly {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &-space-around {
+            display: flex;
+            justify-content: space-around;
+        } 
+    }
+}

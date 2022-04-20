@@ -1,0 +1,19 @@
+.p-index {
+  display: block;
+
+  &__content {
+    &__text {
+      line-height: 1.5;
+      font-size: 1.6rem;
+      padding-left: 2rem;
+      text-align: justify;
+    }
+    .c-head-1 {
+      margin-bottom: 2rem;
+
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

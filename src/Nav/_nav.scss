@@ -1,0 +1,133 @@
+.l-nav {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    @include mq_sp {
+      position: fixed;
+      top: 5.9rem;
+      right: -100%;
+      transition: all 0.2s;
+      height: calc(100% - 6.1rem);
+      width: 100%;
+      z-index: 98;
+      background-color: #fff;
+      display: block;
+    }
+
+    .show-nav & {
+      right: 0;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+
+    @include mq_pc {
+      display: none;
+    }
+  }
+
+  &__line {
+    width: 4rem;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #707070;
+    position: absolute;
+    left: 0;
+    right: auto;
+    transition: all 0.3s;
+    transform: rotate(0deg);
+    margin: auto;
+
+    .show-nav & {
+      top: 50% !important;
+      bottom: 50% !important;
+      transition: all 0.3s;
+      margin: auto;
+    }
+
+    &:first-child {
+      top: 20%;
+
+      .show-nav & {
+        transform: rotate(45deg);
+      }
+    }
+
+    &:nth-child(2) {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+
+      .show-nav & {
+        right: -200%;
+      }
+    }
+
+    &:last-child {
+      bottom: 20%;
+
+      .show-nav & {
+        transform: rotate(-45deg);
+      }
+    }
+
+    // &:not(:last-child) {
+    //   margin-bottom: 1rem;
+    // }
+  }
+
+  &__li {
+    display: block;
+    height: 100%;
+
+    @include mq_sp {
+      height: auto;
+      text-align: center;
+      border-bottom: 1px solid #707070;
+      display: block;
+
+      &:first-child {
+        border-top: 1px solid #707070;
+      }
+    }
+  }
+
+  &__anchor {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 10rem;
+    color: #707070;
+    position: relative;
+
+    &:hover {
+      opacity: 0.7;
+
+      &::after {
+        content: "";
+        height: 100%;
+        width: calc(100% - 1px);
+        position: absolute;
+        border-left: 1px solid #707070;
+        border-right: 1px solid #707070;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+}
