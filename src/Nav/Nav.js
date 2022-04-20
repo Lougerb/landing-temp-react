@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Layout from "../Layout/Layout";
 
 const Nav = () => {
   const [navBurger, setNavBurger] = useState(false);
