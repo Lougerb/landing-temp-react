@@ -1,6 +1,6 @@
 {
-  "homepaeg": "https://lougerb.github.io/landing-temp-react/",
   "name": "landing-temp-react",
+  "homepage": "https://lougerb.github.io/landing-temp-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
