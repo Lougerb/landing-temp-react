@@ -4,7 +4,7 @@ import Homepage from "../Homepage/Homepage";
 
 const Layout = ({ props }) => {
   return (
-    <div id="wrap" className={`wrapper ${"addclass"}`}>
+    <div id="wrap">
       <Header />
       <div className="l-main">
         <Homepage />
